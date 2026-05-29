@@ -1,15 +1,30 @@
+# TASK N
+def palindrom_check(palindrom):
+    check_pal = palindrom[::-1]
+
+    if palindrom == check_pal:
+        return True
+
+    else:
+        return False
+
+
+print("palindrom_check:", palindrom_check("level"))
+print("palindrom_check:", palindrom_check("python"))
+
+
 # TASK M
-def get_square_numbers(arr):
-    result = []
+# def get_square_numbers(arr):
+#     result = []
 
-    for numb in arr:
-        get_square = {"number": numb, "square": numb * numb}
-        result.append(get_square)
+#     for numb in arr:
+#         get_square = {"number": numb, "square": numb * numb}
+#         result.append(get_square)
 
-    return result
+#     return result
 
 
-print("get_square_numbers:", get_square_numbers([25, 15, 9]))
+# print("get_square_numbers:", get_square_numbers([25, 15, 9]))
 
 
 # TASK L
