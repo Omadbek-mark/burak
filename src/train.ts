@@ -1,4 +1,4 @@
-/* Project Standards:
+/** Project Standards:
   - Logging standards
   - Naming standards:
       function, method, variable => CAMEL
@@ -7,6 +7,12 @@
       css => SNAKE
   - Error handling
 */
+/** 
+  Traditional API
+  Rest API
+  GraphQL API
+ */
+
 
 
 // TASK N
