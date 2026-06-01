@@ -1,17 +1,29 @@
+# TASK O
+def calculate_sum_of_numbers(arr):
+    result = 0
+
+    for number in arr:
+        if type(number) == int:
+            result += number
+
+    return result
+
+
+print("calculate_sum_of_numbers:", calculate_sum_of_numbers(
+    [15, "17", {"numb": 11}, True, 7]))
+
 # TASK N
-def palindrom_check(palindrom):
-    check_pal = palindrom[::-1]
+# def palindrom_check(palindrom):
+#     check_pal = palindrom[::-1]
 
-    if palindrom == check_pal:
-        return True
+#     if palindrom == check_pal:
+#         return True
 
-    else:
-        return False
+#     else:
+#         return False
 
-
-print("palindrom_check:", palindrom_check("level"))
-print("palindrom_check:", palindrom_check("python"))
-
+# print("palindrom_check:", palindrom_check("level"))
+# print("palindrom_check:", palindrom_check("python"))
 
 # TASK M
 # def get_square_numbers(arr):
@@ -23,9 +35,7 @@ print("palindrom_check:", palindrom_check("python"))
 
 #     return result
 
-
 # print("get_square_numbers:", get_square_numbers([25, 15, 9]))
-
 
 # TASK L
 # def reverse_sentence(sentence):
@@ -39,9 +49,7 @@ print("palindrom_check:", palindrom_check("python"))
 #     reversed_sentence = " ".join(reversed_words)
 #     return reversed_sentence
 
-
 # print(reverse_sentence("we are practicing python!"))
-
 
 # TASK K
 # def countVowels(word):
@@ -55,6 +63,5 @@ print("palindrom_check:", palindrom_check("python"))
 #             find_vowels.append(letter)  # it is just practice for myself!
 
 #     return count, find_vowels
-
 
 # print(countVowels("Never Give Up!"))
