@@ -1,3 +1,14 @@
+/* Project Standards:
+  - Logging standards
+  - Naming standards:
+      function, method, variable => CAMEL
+      class => PASCAL
+      folders => KEBAB
+      css => SNAKE
+
+*/
+
+
 // TASK N
 function palindromCheck(palindrom: string) {
   let checkPal = palindrom.split("").reverse().join("");
