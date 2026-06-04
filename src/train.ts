@@ -13,21 +13,33 @@
   GraphQL API
  */
 
-// TASK O
-function calculateSumOfNumbers(arr: any[]) {
-  let result = 0;
-
-  for (let number of arr) {
-    if (typeof number === "number") {
-      result += number
-    }
-  }
+// TASK P
+function objectToArray(obj: object) {
+  let result = Object.entries(obj);
 
   return result;
 }
 
-const result = calculateSumOfNumbers([15, "17", { "numb": 11 }, true, 7]);
-console.log("TASK O:", result);
+const result1 = objectToArray({b: 15, c: 20});
+console.log("TASK P:", result1);
+
+
+
+// TASK O
+// function calculateSumOfNumbers(arr: any[]) {
+//   let result = 0;
+
+//   for (let number of arr) {
+//     if (typeof number === "number") {
+//       result += number
+//     }
+//   }
+
+//   return result;
+// }
+
+// const result = calculateSumOfNumbers([15, "17", { "numb": 11 }, true, 7]);
+// console.log("TASK O:", result);
 
 
 // TASK N

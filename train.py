@@ -1,16 +1,31 @@
-# TASK O
-def calculate_sum_of_numbers(arr):
-    result = 0
+# TASK P
+def object_to_array(object):
+    result = []
 
-    for number in arr:
-        if type(number) == int:
-            result += number
+    for key in object:
+        a = [key, object.get(key)]
+        result.append(a)
 
     return result
 
 
-print("calculate_sum_of_numbers:", calculate_sum_of_numbers(
-    [15, "17", {"numb": 11}, True, 7]))
+print("object_to_array:", object_to_array({"b": 15, "c": 20}))
+
+
+# TASK O
+# def calculate_sum_of_numbers(arr):
+#     result = 0
+
+#     for number in arr:
+#         if type(number) == int:
+#             result += number
+
+#     return result
+
+
+# print("calculate_sum_of_numbers:", calculate_sum_of_numbers(
+#     [15, "17", {"numb": 11}, True, 7]))
+
 
 # TASK N
 # def palindrom_check(palindrom):
@@ -25,6 +40,7 @@ print("calculate_sum_of_numbers:", calculate_sum_of_numbers(
 # print("palindrom_check:", palindrom_check("level"))
 # print("palindrom_check:", palindrom_check("python"))
 
+
 # TASK M
 # def get_square_numbers(arr):
 #     result = []
@@ -36,6 +52,7 @@ print("calculate_sum_of_numbers:", calculate_sum_of_numbers(
 #     return result
 
 # print("get_square_numbers:", get_square_numbers([25, 15, 9]))
+
 
 # TASK L
 # def reverse_sentence(sentence):
@@ -50,6 +67,7 @@ print("calculate_sum_of_numbers:", calculate_sum_of_numbers(
 #     return reversed_sentence
 
 # print(reverse_sentence("we are practicing python!"))
+
 
 # TASK K
 # def countVowels(word):
