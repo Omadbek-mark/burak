@@ -13,6 +13,11 @@
   GraphQL API
  */
 
+/** 
+  Traditional FD   => SSR  => EJS
+  Modern FD        => SPA  => REACT 
+ */
+
 // TASK P
 function objectToArray(obj: object) {
   let result = Object.entries(obj);
