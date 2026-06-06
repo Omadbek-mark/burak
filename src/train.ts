@@ -18,15 +18,28 @@
   Modern FD        => SPA  => REACT 
  */
 
-// TASK P
-function objectToArray(obj: object) {
-  let result = Object.entries(obj);
+
+// TASK Q
+function hasProperty(obj: object, prop: PropertyKey) {
+  let result = prop in obj;
 
   return result;
-}
+  }
 
-const result1 = objectToArray({b: 15, c: 20});
-console.log("TASK P:", result1);
+const result1 = (hasProperty({ "age": 22 }, "name"));
+const result2 = (hasProperty({ "age": 22 }, "age"));
+console.log("TASK Q:", result1);
+console.log("TASK Q2:", result2);
+
+// TASK P
+// function objectToArray(obj: object) {
+//   let result = Object.entries(obj);
+
+//   return result;
+// }
+
+// const result1 = objectToArray({b: 15, c: 20});
+// console.log("TASK P:", result1);
 
 
 

@@ -1,15 +1,25 @@
-# TASK P
-def object_to_array(object):
-    result = []
-
-    for key in object:
-        a = [key, object.get(key)]
-        result.append(a)
-
+# TASK Q
+def has_property(object, prop):
+    result = prop in object
     return result
 
 
-print("object_to_array:", object_to_array({"b": 15, "c": 20}))
+print(has_property({"age": 22}, "name"))
+print(has_property({"age": 22}, "age"))
+
+
+# TASK P
+# def object_to_array(object):
+#     result = []
+
+#     for key in object:
+#         a = [key, object.get(key)]
+#         result.append(a)
+
+#     return result
+
+
+# print("object_to_array:", object_to_array({"b": 15, "c": 20}))
 
 
 # TASK O
