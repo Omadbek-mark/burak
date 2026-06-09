@@ -18,6 +18,11 @@
   Modern FD        => SPA  => REACT 
  */
 
+  /** 
+    request join
+    self destroy
+   */
+
 
   // TASK R
 function calculate(str: string): number {
