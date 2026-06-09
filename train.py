@@ -1,11 +1,31 @@
+# TASK R
+def calculate(stringcalc: str) -> int:
+    calculate_str = stringcalc.split()
+    a = int(calculate_str[0])
+    get_result = calculate_str[1]
+    b = int(calculate_str[2])
+
+    if get_result == "+":
+        return a + b
+    elif get_result == "-":
+        return a - b
+    elif get_result == "*":
+        return a * b
+    elif get_result == "/":
+        return a // b
+
+
+print(calculate("15 + 7"))
+
+
 # TASK Q
-def has_property(object, prop):
-    result = prop in object
-    return result
+# def has_property(object, prop):
+#     result = prop in object
+#     return result
 
 
-print(has_property({"age": 22}, "name"))
-print(has_property({"age": 22}, "age"))
+# print(has_property({"age": 22}, "name"))
+# print(has_property({"age": 22}, "age"))
 
 
 # TASK P

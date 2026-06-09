@@ -19,17 +19,42 @@
  */
 
 
-// TASK Q
-function hasProperty(obj: object, prop: PropertyKey) {
-  let result = prop in obj;
+  // TASK R
+function calculate(str: string): number {
+  const ele = str.split(" ");
 
-  return result;
+  const a = Number(ele[0]);
+  const getResult = ele[1];
+  const b = Number(ele[2]);
+
+  if (getResult === "+") {
+    return a + b;
+  } else if (getResult === "-") {
+    return a - b;
+  } else if (getResult === "*") {
+    return a * b;
+  } else if (getResult === "/") {
+    return a / b;
   }
 
-const result1 = (hasProperty({ "age": 22 }, "name"));
-const result2 = (hasProperty({ "age": 22 }, "age"));
-console.log("TASK Q:", result1);
-console.log("TASK Q2:", result2);
+  return 0;
+}
+
+const result = calculate("20 + 7");
+console.log("TASK R:", result);
+
+
+// TASK Q
+// function hasProperty(obj: object, prop: PropertyKey) {
+//   let result = prop in obj;
+
+//   return result;
+//   }
+
+// const result1 = (hasProperty({ "age": 22 }, "name"));
+// const result2 = (hasProperty({ "age": 22 }, "age"));
+// console.log("TASK Q:", result1);
+// console.log("TASK Q2:", result2);
 
 // TASK P
 // function objectToArray(obj: object) {
