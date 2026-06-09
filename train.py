@@ -15,7 +15,7 @@ def calculate(stringcalc: str) -> int:
         return a // b
 
 
-print(calculate("15 + 7"))
+print("TASK R:", calculate("15 + 7"))
 
 
 # TASK Q

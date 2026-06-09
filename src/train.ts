@@ -45,7 +45,7 @@ function calculate(str: string): number {
   return 0;
 }
 
-const result = calculate("20 + 7");
+const result = calculate("17 + 7");
 console.log("TASK R:", result);
 
 
