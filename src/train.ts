@@ -18,9 +18,15 @@
   Modern FD        => SPA  => REACT 
  */
 
-  /** 
+  /** Cookies
     request join
     self destroy
+   */
+  
+    /** Validation
+    Frontend validation
+    Backend validation
+    Database validation
    */
 
 
