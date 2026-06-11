@@ -1,21 +1,33 @@
+# TASK S
+def missing_number(arr):
+    n = len(arr)
+    f = n * (n + 1) // 2
+    t = sum(arr)
+
+    return f - t
+
+
+print("TASK S py:", missing_number([2, 0, 3]))
+
+
 # TASK R
-def calculate(stringcalc: str) -> int:
-    calculate_str = stringcalc.split()
-    a = int(calculate_str[0])
-    get_result = calculate_str[1]
-    b = int(calculate_str[2])
+# def calculate(stringcalc: str) -> int:
+#     calculate_str = stringcalc.split()
+#     a = int(calculate_str[0])
+#     get_result = calculate_str[1]
+#     b = int(calculate_str[2])
 
-    if get_result == "+":
-        return a + b
-    elif get_result == "-":
-        return a - b
-    elif get_result == "*":
-        return a * b
-    elif get_result == "/":
-        return a // b
+#     if get_result == "+":
+#         return a + b
+#     elif get_result == "-":
+#         return a - b
+#     elif get_result == "*":
+#         return a * b
+#     elif get_result == "/":
+#         return a // b
 
 
-print("TASK R:", calculate("15 + 7"))
+# print("TASK R:", calculate("15 + 7"))
 
 
 # TASK Q

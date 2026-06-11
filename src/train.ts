@@ -30,29 +30,45 @@
    */
 
 
-  // TASK R
-function calculate(str: string): number {
-  const ele = str.split(" ");
+//  TASK S
+function missingNumber(arr: number[]) {
+  let n = arr.length;
+  let f = n * (n + 1) / 2;
+  let t = 0;
+  for (let numb of arr) {
+    t += numb
+  };
 
-  const a = Number(ele[0]);
-  const getResult = ele[1];
-  const b = Number(ele[2]);
-
-  if (getResult === "+") {
-    return a + b;
-  } else if (getResult === "-") {
-    return a - b;
-  } else if (getResult === "*") {
-    return a * b;
-  } else if (getResult === "/") {
-    return a / b;
-  }
-
-  return 0;
+  return f - t;
 }
 
-const result = calculate("17 + 7");
-console.log("TASK R:", result);
+const result = missingNumber([3, 1, 2]);
+console.log("TASK S ts:", result);
+
+
+  // TASK R
+// function calculate(str: string): number {
+//   const ele = str.split(" ");
+
+//   const a = Number(ele[0]);
+//   const getResult = ele[1];
+//   const b = Number(ele[2]);
+
+//   if (getResult === "+") {
+//     return a + b;
+//   } else if (getResult === "-") {
+//     return a - b;
+//   } else if (getResult === "*") {
+//     return a * b;
+//   } else if (getResult === "/") {
+//     return a / b;
+//   }
+
+//   return 0;
+// }
+
+// const result = calculate("17 + 7");
+// console.log("TASK R:", result);
 
 
 // TASK Q
