@@ -1,13 +1,39 @@
+# TASK T
+def merge_sorted_arrays(arr1, arr2):
+    i = 0
+    i2 = 0
+    result = []
+
+    while i < len(arr1) and i2 < len(arr2):
+        if arr1[i] <= arr2[i2]:
+            result.append(arr1[i])
+            i += 1
+        else:
+            result.append(arr2[i2])
+            i2 += 1
+    while i < len(arr1):
+        result.append(arr1[i])
+        i += 1
+    while i2 < len(arr2):
+        result.append(arr2[i2])
+        i2 += 1
+
+    return result
+
+
+print("TASK T:", merge_sorted_arrays([2, 3, 5], [5, 7]))
+
+
 # TASK S
-def missing_number(arr):
-    n = len(arr)
-    f = n * (n + 1) // 2
-    t = sum(arr)
+# def missing_number(arr):
+#     n = len(arr)
+#     f = n * (n + 1) // 2
+#     t = sum(arr)
 
-    return f - t
+#     return f - t
 
 
-print("TASK S py:", missing_number([2, 0, 3]))
+# print("TASK S py:", missing_number([2, 0, 3]))
 
 
 # TASK R

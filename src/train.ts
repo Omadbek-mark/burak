@@ -30,20 +30,51 @@
    */
 
 
-//  TASK S
-function missingNumber(arr: number[]) {
-  let n = arr.length;
-  let f = n * (n + 1) / 2;
-  let t = 0;
-  for (let numb of arr) {
-    t += numb
-  };
+// TASK T
+function mergeSortedArrays(arr1: number[], arr2: number[]) {
+  let i = 0;
+  let i2 = 0;
+  let result = [];
 
-  return f - t;
+  while (i < arr1.length && i2 < arr2.length) {
+    if (arr1[i] <= arr2[i2]) {
+      result.push(arr1[i]);
+      i += 1;
+    } else {
+      result.push(arr2[i2]);
+      i2 += 1;
+    }
+  }
+  while (i < arr1.length) {
+    result.push(arr1[i]);
+    i += 1;
+  }
+  while (i2 < arr2.length) {
+    result.push(arr2[i2]);
+    i2 += 1;
+  }
+
+  return result;
 }
 
-const result = missingNumber([3, 1, 2]);
-console.log("TASK S ts:", result);
+console.log("TASK T:", mergeSortedArrays([2, 3, 5], [5, 7]));
+
+
+
+//  TASK S
+// function missingNumber(arr: number[]) {
+//   let n = arr.length;
+//   let f = n * (n + 1) / 2;
+//   let t = 0;
+//   for (let numb of arr) {
+//     t += numb
+//   };
+
+//   return f - t;
+// }
+
+// const result = missingNumber([3, 1, 2]);
+// console.log("TASK S ts:", result);
 
 
   // TASK R
