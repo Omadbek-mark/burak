@@ -32,8 +32,8 @@ class MemberService {
     // TODO: Consider member status later
     const member = await this.memberModel
       .findOne(
-        { memberNick: input.memberNick },
-        { memberNick: 1, memberPassword: 1 }
+        { memberNick: input.memberNick }, // filter
+        { memberNick: 1, memberPassword: 1 } // projection
       )
       .exec();
     if (!member) throw new Errors(HttpCode.NOT_FOUND, Message.NO_MEMBER_NICK);
@@ -97,6 +97,17 @@ class MemberService {
     return await this.memberModel
       .findById(member._id)
       .exec();
+  }
+
+
+   public async getUsers(): Promise<Member[]> {
+     const result = await this.memberModel
+       .find({ memberType: MemberType.USER })
+       .exec();
+     
+     if (!result) throw new Errors(HttpCode.NOT_FOUND, Message.NO_DATA_FOUND);
+
+     return result;
   }
 }
 
