@@ -1,27 +1,43 @@
-# TASK T
-def merge_sorted_arrays(arr1, arr2):
-    i = 0
-    i2 = 0
-    result = []
+# TASK V
+def countChars(s: str) -> dict:
+    result = {}
 
-    while i < len(arr1) and i2 < len(arr2):
-        if arr1[i] <= arr2[i2]:
-            result.append(arr1[i])
-            i += 1
+    for char in s:
+        if char in result:
+            result[char] += 1
         else:
-            result.append(arr2[i2])
-            i2 += 1
-    while i < len(arr1):
-        result.append(arr1[i])
-        i += 1
-    while i2 < len(arr2):
-        result.append(arr2[i2])
-        i2 += 1
+            result[char] = 1
 
     return result
 
 
-print("TASK T:", merge_sorted_arrays([2, 3, 5], [5, 7]))
+print(countChars("difficult"))
+
+
+# TASK T
+# def merge_sorted_arrays(arr1, arr2):
+#     i = 0
+#     i2 = 0
+#     result = []
+
+#     while i < len(arr1) and i2 < len(arr2):
+#         if arr1[i] <= arr2[i2]:
+#             result.append(arr1[i])
+#             i += 1
+#         else:
+#             result.append(arr2[i2])
+#             i2 += 1
+#     while i < len(arr1):
+#         result.append(arr1[i])
+#         i += 1
+#     while i2 < len(arr2):
+#         result.append(arr2[i2])
+#         i2 += 1
+
+#     return result
+
+
+# print("TASK T:", merge_sorted_arrays([2, 3, 5], [5, 7]))
 
 
 # TASK S
