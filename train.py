@@ -1,17 +1,32 @@
-# TASK V
-def countChars(s: str) -> dict:
-    result = {}
+# TASK W
+def chunkArray(arr, size):
+    result = []
 
-    for char in s:
-        if char in result:
-            result[char] += 1
-        else:
-            result[char] = 1
+    for i in range(0, len(arr), size):
+        chunk = arr[i: i + size]
+        result.append(chunk)
 
     return result
 
 
-print(countChars("difficult"))
+print("TASK W:", chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 3))
+print("TASK W-1:", chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 4))
+print("TASK W-2:", chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 2))
+
+# TASK V
+# def countChars(s: str) -> dict:
+#     result = {}
+
+#     for char in s:
+#         if char in result:
+#             result[char] += 1
+#         else:
+#             result[char] = 1
+
+#     return result
+
+
+# print(countChars("difficult"))
 
 
 # TASK T
