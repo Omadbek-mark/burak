@@ -1,17 +1,36 @@
+# TASK X
+def countOccurrences(obj, target):
+    count = 0
+
+    for key, value in obj.items():
+        if key == target:
+            count += 1
+
+        if isinstance(value, dict):
+            count += countOccurrences(value, target)
+
+    return count
+
+
+print(
+    "TASK X:",
+    countOccurrences({"version": "new", "s": {"version": "old", "d": {"version": "rare"}}}, "version"))
+
+
 # TASK W
-def chunkArray(arr, size):
-    result = []
+# def chunkArray(arr, size):
+#     result = []
 
-    for i in range(0, len(arr), size):
-        chunk = arr[i: i + size]
-        result.append(chunk)
+#     for i in range(0, len(arr), size):
+#         chunk = arr[i: i + size]
+#         result.append(chunk)
 
-    return result
+#     return result
 
 
-print("TASK W:", chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 3))
-print("TASK W-1:", chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 4))
-print("TASK W-2:", chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 2))
+# print("TASK W:", chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 3))
+# print("TASK W-1:", chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 4))
+# print("TASK W-2:", chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 2))
 
 # TASK V
 # def countChars(s: str) -> dict:
