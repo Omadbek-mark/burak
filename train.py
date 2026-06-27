@@ -1,20 +1,34 @@
+# TASK Y
+def findIntersection(arr1, arr2):
+    set2 = set(arr2)
+    result = []
+    for num in arr1:
+        if num in set2:
+            if num not in result:
+                result.append(num)
+
+    return result
+
+
+print("TASK Y:", findIntersection([5, 7, 15, 22], [7, 15, 11, 3]))
+
 # TASK X
-def countOccurrences(obj, target):
-    count = 0
+# def countOccurrences(obj, target):
+#     count = 0
 
-    for key, value in obj.items():
-        if key == target:
-            count += 1
+#     for key, value in obj.items():
+#         if key == target:
+#             count += 1
 
-        if isinstance(value, dict):
-            count += countOccurrences(value, target)
+#         if isinstance(value, dict):
+#             count += countOccurrences(value, target)
 
-    return count
+#     return count
 
 
-print(
-    "TASK X:",
-    countOccurrences({"version": "new", "s": {"version": "old", "d": {"version": "rare"}}}, "version"))
+# print(
+#     "TASK X:",
+#     countOccurrences({"version": "new", "s": {"version": "old", "d": {"version": "rare"}}}, "version"))
 
 
 # TASK W
