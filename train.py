@@ -1,16 +1,30 @@
+# TASK Z
+def sumEvens(arr):
+    total = 0
+
+    for numb in arr:
+        if numb % 2 == 0:
+            total += numb
+
+    return total
+
+
+print("TASK Z, sumEvens:", sumEvens([2, 5, 8, 6, 7]))
+
+
 # TASK Y
-def findIntersection(arr1, arr2):
-    set2 = set(arr2)
-    result = []
-    for num in arr1:
-        if num in set2:
-            if num not in result:
-                result.append(num)
+# def findIntersection(arr1, arr2):
+#     set2 = set(arr2)
+#     result = []
+#     for num in arr1:
+#         if num in set2:
+#             if num not in result:
+#                 result.append(num)
 
-    return result
+#     return result
 
 
-print("TASK Y:", findIntersection([5, 7, 15, 22], [7, 15, 11, 3]))
+# print("TASK Y:", findIntersection([5, 7, 15, 22], [7, 15, 11, 3]))
 
 # TASK X
 # def countOccurrences(obj, target):
