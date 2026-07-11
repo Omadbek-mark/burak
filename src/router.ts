@@ -5,6 +5,7 @@ import uploader from "./libs/utils/uploader";
 import productController from "./controllers/product.controller";
 import ordercontroller from "./controllers/order.controller";
 import orderController from "./controllers/order.controller";
+import { verify } from "jsonwebtoken";
 
 /** Member */
 router.get(
@@ -47,6 +48,11 @@ router.post(
   "/order/create",
   memberController.verifyAuth,
   orderController.createOrder
+);
+router.get(
+  "/order/all",
+  memberController.verifyAuth,
+  orderController.getMyOrders
 );
 
 export default router;
