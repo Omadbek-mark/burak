@@ -95,6 +95,9 @@ class OrderService {
         }
       ])
       .exec();
+    
+    console.log("RAW RESULT:", JSON.stringify(result, null, 2));
+    
     if (!result) throw new Errors(HttpCode.NOT_FOUND, Message.NO_DATA_FOUND);
     
     return result;
